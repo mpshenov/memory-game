@@ -1,0 +1,70 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+body {
+    width: 768px;
+    margin: 0 auto;
+    padding-top: 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+body.modal-open {
+    overflow: hidden;
+    height: 100vh; 
+}
+
+header {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.counter {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    place-items: center;
+
+    gap: 20px;
+}
+
+.card {
+    background-color: black;
+
+    width: 100px;
+    height: 200px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card.active {
+    background-color: grey;
+}
+
+.leaderboard-list {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.leaderboard-list li {
+    padding: 6px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.leaderboard-list li.empty {
+    text-align: center;
+    color: #888;
+}
